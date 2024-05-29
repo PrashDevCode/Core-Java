@@ -1,16 +1,11 @@
 import java.util.Scanner;
-public class Sum1stNnum {
+public class Maths {
     public static void main(String[] args) {
-        int n,i,add=0;
         Scanner sc=new Scanner(System.in);
+        int n,sum=0;
         System.out.print("Enter your number= ");
         n=sc.nextInt();
-        i=1;
-        while(i<=n) {
-            add=add+i;
-            i=i+1;
-        } 
-        System.out.println("Addition= "+add);
-
+        sum=n*(n+1)/2;
+        System.out.println(sum);
     }
 }
